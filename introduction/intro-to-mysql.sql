@@ -1,11 +1,13 @@
 -- Shows all databases within your server
 show databases;
 
--- Use a specific database
-use mysql;
+-- Create a database
+CREATE DATABASE pet_shop;
+CREATE DATABASE example;
 
--- Show all the tables in the database
-show tables;
+-- Use a specific database (not needed when using a GUI i.e TablePlus, DBVisualizer) as you select the databases you want to use to give your editor context. 
+-- This is needed in the CLI, though.
+USE pet_shop;
 
--- Select some columns from some table in the database
-select * from default_roles;
+-- See all tables in a database
+SHOW TABLES;
